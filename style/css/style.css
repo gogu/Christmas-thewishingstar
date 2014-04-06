@@ -1,0 +1,143 @@
+﻿@charset"utf-8";
+@import url(reset.css);
+
+body { background:#000 url(../img/area-bg.gif) center 0 repeat-x; color:#fff; font-family:simsun,san-serif; }
+#box { position:relative; height:708px; }
+#logo { position:absolute; left:20px; bottom:10px; background:url(../img/logo.png) no-repeat; width:116px; height:82px; text-indent:-99999em; }
+#indexStyle { background:#fff url(../img/club-bg.gif) center -20px repeat-x; height:615px; }
+#indexHead { display:none; }
+
+#nav { background:url(../img/nav-bg.png) repeat-x; height:42px; }
+#nav li { float:left; padding:0 6px; height:42px; text-indent:-99999em; }
+	#nav a { display:block; background:url(../img/menu.png) no-repeat; height:42px; outline:0; }
+	#nav-a a { background-position:-10px 0; width:94px; }
+	#nav-a a:hover { background-position:-10px -42px; }
+	#nav-b a { background-position:-118px 0; width:32px; }
+	#nav-b a:hover { background-position:-118px -42px; }
+	#nav-c a { background-position:-168px 0; width:62px; }
+	#nav-c a:hover { background-position:-168px -42px; }
+	#nav-d a { background-position:-246px 0; width:46px; }
+	#nav-d a:hover { background-position:-246px -42px; }
+	#nav-e a { background-position:-306px 0; width:62px; }
+	#nav-e a:hover { background-position:-306px -41px; }
+	#nav-f a { background-position:-386px 0; width:32px; }
+	#nav-f a:hover { background-position:-386px -41px; }
+
+
+#indexList,
+#clubList { position:relative; margin:0 auto; width:1200px; height:500px; cursor:default; }
+	#indexList li{ position:absolute; width:126px; height:126px; }
+	#clubList li { position:absolute; }
+	#indexList img { width:126px; height:126px; }
+#indexList { background:url(../img/logo-bg.png) no-repeat center center; }
+	#c1 { left:950px; top:35px; }
+	#c2 { left:950px; top:360px; }
+	#c3 { left:280px; top:370px; }
+	#c4 { left:750px; top:30px; }
+	#c5 { left:840px; top:226px; }
+	#c6 { left:310px; top:20px; }
+	#c7 { left:660px; top:360px; }
+	#c8 { left:105px; top:77px; }
+	#c9 { left:213px; top:211px; }
+	#c10 { left:1007px; top:184px; }
+	#c11 { left:480px; top:44px; }
+	#c12 { left:40px; top:300px; }
+#clubList { display:none; }
+	#c13 { left:399px; top:29px; }
+	#c14 { left:982px; top:300px; }
+	#c15 { left:69px; top:41px; }
+	#c16 { left:937px; top:23px; }
+	#c17 { left:727px; top:28px; }
+	#c18 { left:359px; top:192px; }
+	#c19 { left:165px; top:105px; }
+	#c20 { left:643px; top:110px; }
+	#c21 { left:69px; top:205px; }
+	#c22 { left:263px; top:280px; }
+	#c23 { left:48px; top:318px; }
+	#c24 { left:664px; top:228px; }
+	#c25 { left:864px; top:128px; }
+	#c26 { left:442px; top:306px; }
+	#c27 { left:1093px; top:206px; }
+	#c28 { left:298px; top:401px; }
+	#c29 { left:759px; top:351px; }
+	#c30 { left:540px; top:387px; }
+	#c31 { left:990px; top:409px; }
+	#c32 { left:433px; top:103px; }
+	#c33 { left:1000px; top:100px; }
+	#c34 { left:44px; top:409px; }
+	#c35 { left:873px; top:196px; }
+	
+#locxy { position:absolute; top:42px; padding:24px 0 0 36px; font-family:simsun; font-size:14px; color:#b5b4b4; text-shadow:1px 2px 2px #000; }
+	
+#main { position:relative; margin:0 auto; width:1200px; height:480px; }
+
+#con { position:absolute; top:96px; left:468px; background:url(../img/con-bg.png) no-repeat; }
+
+#starArea { width:100%; height:100%; }
+	#cCon,
+	#alArea { position:absolute; top:0; left:0; width:1200px; height:500px; }
+	#alArea { position:absolute; width:1200px; height:500px; text-indent:-99999em; }
+	.pointer { cursor:url(../img/starp.png),crosshair; }
+	
+	#starArea li { overflow:hidden; }
+	.starStyle { position:absolute; background:url(../img/star.png) no-repeat 11px 11px; padding:11px; width:22px; height:22px; cursor:pointer; }
+	.starStyle:hover { background-position:11px -33px; }
+	.starStyle p { display:none; }
+	.praStyle { text-indent:1em; }
+	.waiting { }
+	.starTarget { display:none; position:absolute; background:url(../img/target.png) no-repeat 11px 11px; padding:11px; width:60px; height:60px; }
+	
+	#wishText { overflow:hidden; position:absolute; top:156px; left:500px; width:200px; height:150px; font-size:18px; font-family:"楷体",simsun; }
+	.nicknameStyle { text-align:right; }
+	
+	#alertBlock,
+	#upBlock,
+	#roomBlock { display:none; position:absolute; top:0; left:0; width:1200px; height:500px; }
+		#upBlock form { overflow:auto; margin:50px auto 0; background:#fff url(../img/upTop.gif) no-repeat; padding:145px 32px 10px; width:540px; color:#000; box-shadow:2px 2px 5px #000; }
+		.formBlock { background:#fff; overflow:auto; float:left; padding-top:10px; width:390px; height:262px; border-right:1px solid #cfcfcf; }
+		.formBlock dt { float:left; margin-bottom:5px; width:90px; height:16px; line-height:16px; font-family:microsoft yahei,"微软雅黑",simsun; text-align:right; }
+		.formBlock dd { margin:10px; font-family:microsoft yahei,"微软雅黑",simsun; }
+		.formBlock dd input { border:1px solid #b4b6b7; width:122px; height:24px; font-size:14px; }
+		.formBlock dd textarea { border:1px solid #b4b6b7; width:242px; height:100px; font-size:14px; }
+		.formBlock p { padding-left:90px; font-size:12px; }
+			#wordCount{ color:#fe0000; }
+		.formBlock .bgroup { padding-left:80px; }
+		
+		.adBlock { float:left; width:146px; height:262px; border-left:1px solid #e7e4e4; }
+		.adBlock h4 { padding:12px 0; color:#134e84; font-size:16px; text-align:center; }
+		.adBlock li { padding:4px; text-align:center; }
+		
+		#alertbg,
+		#roombg,
+		#blankbg { background:#fff url(../img/slogo.gif) no-repeat bottom right; padding:40px 30px; width:250px; margin:150px auto 0; box-shadow:2px 2px 10px #000; }
+		#alertbg .bgroup { margin:20px auto 10px; width:176px; overflow:auto; }
+		#alertText { color:#000; font-family:microsoft yahei,"微软雅黑",simsun; }
+		.bgroup a,
+		.bgroup input { display:inline; float:left; width:68px; margin:10px 10px 0px; height:25px; text-indent:-99999em; cursor:pointer; outline:0; }
+		.alertY { background:url(../img/OK.gif) no-repeat; }
+		.alertN { background:url(../img/cancel.gif) no-repeat; }
+		.alertS { background:url(../img/OK.gif) no-repeat; border:0; }
+		
+		
+		#roomBlock { height:600px; color:#000; }
+			#blankbg { margin-top:80px; width:600px; }
+			.exit,
+			.reRoom { position:absolute; top:90px; left:890px; width:2em; cursor:pointer; font-size:22px; font-family:simhei; color:#333; text-align:center; }
+			.reRoom { top:210px; left:710px; }
+			
+			#roombg { overflow:auto; margin-top:200px; }
+			#roombg li { float:left; width:7em; height:2em; text-align:center; }
+			#roombg a { font-size:16px; font-family:microsoft yahei,"微软雅黑",simsun; color:#000; }
+			.fu { color:red; font-size:12px; }
+		
+	#mainStar { position:absolute; height:282px; width:285px; top:90px; left:460px; }
+		#mainStar li { overflow:hidden; position:absolute; background:url(../img/mainStar.png) no-repeat; padding:11px; width:36px; height:36px; cursor:pointer; text-indent:-99999em; }
+		#mainStar li p { display:none; }
+		#mainStar1 { left:32px; top:22px; }
+		#mainStar2 { left:141px; top:-5px; }
+		#mainStar3 { left:243px; top:50px; }
+		#mainStar4 { left:246px; top:177px; }
+		#mainStar5 { left:142px; top:259px; }
+		#mainStar6 { left:-1px; top:175px; }
+	
+#footer { position:absolute; right:10px; bottom:16px; text-align:right; font-size:12px; }

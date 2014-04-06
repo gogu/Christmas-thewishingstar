@@ -1,0 +1,161 @@
+﻿<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--[if IE 6]><script type="text/javascript">window.location="http://192.168.102.42/www/publish/ViewNews.view.x?newsId=84858";</script><![endif]-->
+	<link rel="stylesheet" href="style/css/style.css" />
+	<script type="text/javascript" src="style/js/jquery-1.6.3.min.js"></script>
+	<!-- [if lt IE 9]><script type="text/javascript" src="style/js/html5.js"></script><![endif]-->
+	<title>摩羯座</title>
+</head>
+<body>
+<div id="box">
+	<header>
+		<h1 id="logo">42许愿星空 - Merry Christmas</h1>
+	
+		<ul id="nav">
+			<li id="nav-a"><a href="javascript:void(0);" id="wishStart">我要许愿</a></li>
+			<li id="nav-b"><a href="javascript:void(0)" id="help">帮助</a></li>
+			<li id="nav-c"><a href="index.html">返回主页</a></li>
+			<li id="nav-d"><a href="http://192.168.102.42/www/index.jsp" target="_blank">42首页</a></li>
+			<li id="nav-f"><a href="##">奖品</a></li>
+		</ul>
+	</header>
+	
+	<div id="locxy">
+		已有<span id="sNum">6443</span>人放飞许愿星<br />
+		当前坐标：(<span id="posx">0000</span>,<span id="posy">0000</span>)
+	</div>
+	
+	<div id="main">
+		<ul id="starArea">
+			<div id="alArea" style="background:url(images/cC7.png) no-repeat">true</div>
+			<div class="starTarget" style="top:100px; left:824px; "></div>
+			
+			<!--START 星本体 倒序 未审核waiting-->
+			<li id="star5" class="starStyle waiting" style="top:29px; left:323px;">
+				<p class="starId">ID.42</p>
+				<p class="pra">未点亮</p>
+				<p class="nickname">unknow</p>
+			</li>
+			
+			<li id="star4" class="starStyle waiting" style="top:69px; left:223px;">
+				<p class="pra">未点亮</p>
+				<p class="nickname">unknow</p>
+			</li>
+			
+			<li id="star3" class="starStyle" style="top:119px; left:843px;">
+				<p class="pra">想要推理社</p>
+				<p class="nickname">gogu</p>
+			</li>
+			
+			<li id="star2" class="starStyle" style="top:329px; left:303px;">
+				<p class="pra">祝小组所有人骚骚的，也祝42小组勇往直前，所有人相亲相爱！</p>
+				<p class="nickname">42</p>
+			</li>
+			
+			<li id="star1" class="starStyle" style="top:200px; left:823px;">
+				<p class="pra">满足灵魂的渴望</p>
+				<p class="nickname">gogu</p>
+			</li>
+			<!-- END -->
+		</ul>
+		
+		<div id="con"><img src="images/C7.png" alt="" /></div>
+		
+		<ul id="mainStar">
+			<!--START 主星	-->
+			<li id="mainStar6">
+				<p class="pra">祝<br />小组<br />所有人<br />骚骚的<br />，也祝<br />42小组<br />勇往直前<br />，所有人<br />相亲相爱！</p>
+				<p class="nickname">42</p>
+			</li>
+			
+			<li id="mainStar5">
+				<p style="text-align:center; background:#333; "><img src="images/C11.png" alt=""/></p>
+			</li>
+			
+			<li id="mainStar4">
+				<p class="pra"></p>
+				<p class="nickname">42</p>
+			</li>
+			
+			<li id="mainStar3">
+				<p class="pra">祝小组所有人骚骚的，也祝42小组勇往直前，所有人相亲相爱！</p>
+				<p class="nickname">42</p>
+			</li>
+			
+			<li id="mainStar2">
+				<p class="pra">祝小组所有人骚骚的，也祝42小组勇往直前，所有人相亲相爱！</p>
+				<p class="nickname">42</p>
+			</li>
+			
+			<li id="mainStar1">
+				<p class="pra">祝小组所有人骚骚的，也祝42小组勇往直前，所有人相亲相爱！</p>
+				<p class="nickname">42</p>
+			</li>
+		</ul>
+		
+		<div id="wishText" class="">
+		</div>
+		
+		<div id="upBlock">
+			<form action="">				
+				<div class="formBlock">
+					<dl>
+						<dt><label for="upNickname">*您的昵称：</label></dt>
+						<dd><input name="nickname" id="upNickname" type="text" maxlength="10" /></dd>
+		
+						<dt><label for="upEmail" >*邮箱：</label></dt>
+						<dd><input name="email" id="upEmail" type="text" maxlength="20" />@nou.com.cn</dd>
+						
+						<dt><label for="upContent">*许愿内容：</label></dt>
+						<dd><textarea name="message" id="upContent" maxlength="50"></textarea></dd>
+						
+						<input type="hidden" name="locx" id="locx" value="" />
+						<input type="hidden" name="locy" id="locy" value="" />
+					</dl>
+					
+					<p>还可以再输入<span id="wordCount">50</span>字</p>
+					<p>(PS.您的邮箱将作为领奖凭证请认真填写)</p>
+					<div class="bgroup">
+						<a class="alertN" id="upN">取消</a>
+						<input type="submit" class="alertS" value="提交" />
+					</div>
+				</div>
+				
+				<div class="adBlock">
+					<h4>活动赞助商</h4>
+					
+					<ul>
+						<li><img src="images/ad1.png" alt="" /></li>
+						<li><img src="images/ad2.png" alt="" /></li>
+					</ul>
+				</div>
+			</form>
+		</div>
+		<!-- 12 30 -->
+		<div id="roomBlock">
+			<div id="blankbg">
+			</div>
+			<div id="exit" class="exit">X</div>
+		</div>
+		<!-- 12 30 -->
+		<div id="alertBlock">
+			<div id="alertbg">
+				<p id="alertText">恭喜您许愿成功！正在为您点亮许愿星!^-^</p>
+				<div class="bgroup">
+					<a href="javascript:void(0);" class="alertY" id="alertY">确定</a>
+					<a href="javascript:void(0);" class="alertN" id="alertN">取消</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">因为42，所以精彩 - Copyright 2011 By 42Team</div>
+	
+	<script type="text/javascript" src="style/js/fun.js"></script>
+</div>
+</body>
+</html>
+
